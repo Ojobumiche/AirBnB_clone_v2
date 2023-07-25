@@ -5,7 +5,7 @@ import os
 from fabric.api import *
 from datetime import datetime
 
-env.hosts = ["100.26.154.241", "35.153.194.206"]
+env.hosts = ["52.91.116.252", "34.227.93.128"]
 env.user = "ubuntu"
 
 
@@ -47,7 +47,7 @@ def do_deploy(archive_path):
         run("sudo rm -rf /data/web_static/current")
         run("sudo ln -s {} /data/web_static/current".format(new_version))
 
-        print("Yay! Alfeenah, new version deployed!")
+        print("Yay! Joshua, new version deployed!")
         return True
 
     return False
