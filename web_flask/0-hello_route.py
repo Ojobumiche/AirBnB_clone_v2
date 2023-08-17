@@ -10,17 +10,10 @@ app = Flask(__name__)
 app.debug = False
 
 
-@app.route("/", strict_slashes=False)
+@app.route("/airbnb-onepage/", strict_slashes=False)
 def hello_hbnb():
     """Displays 'Hello HBNB!'"""
     return "Hello HBNB!"
-
-
-@app.route("/web_flask", strict_slashes=False)
-def index():
-    """Displays template!"""
-    return render_template("7-states_list.html")
-    
 
 
 if __name__ == "__main__":
